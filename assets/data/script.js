@@ -2,7 +2,7 @@ const tareas = []
 
 const taskInput = document.querySelector('#taskInput')
 const btnAgregar = document.querySelector('#btnAgregar')
-const tbodyTareas = document.querySelector('#taskList')
+const tbodyTareas = document.querySelector('#taskLista')
 const spanTotal = document.querySelector('#totalTasks')
 const spanRealizadas = document.querySelector('#completedTasks')
 
