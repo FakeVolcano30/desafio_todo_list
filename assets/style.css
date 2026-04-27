@@ -1,0 +1,83 @@
+body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 600px;
+        }
+        h1 { border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .input-group {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            align-items: center;
+        }
+        #taskInput {
+            flex-grow: 1;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        #btnAgregar {
+            background-color: #1a7b45;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .content {
+            display: flex;
+            gap: 40px;
+        }
+        .summary { font-weight: bold; }
+        #taskList {
+            list-style: none;
+            padding: 0;
+        }
+        #taskList li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .btn-delete {
+            color: red;
+            font-weight: bold;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .completed-text {
+            text-decoration: line-through;
+            color: gray;
+        }
+        
+        @media (max-width: 576px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                width: 100%;
+                padding: 15px;
+            }
+            .content {
+                flex-direction: column;
+                gap: 20px;
+            }
+            #taskInput {
+                padding: 10px;
+            }
+            #btnAgregar {
+                padding: 12px 20px;
+            }
+        }
